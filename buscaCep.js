@@ -16,11 +16,11 @@ function buscaCep(cep) {
     .then(r => r.json())
     .then(dadosCep => {
       document.querySelector('[data-cep]').innerText = dadosCep.cep;
-      document.querySelector('[data-log').innerText = dadosCep.logradouro;
-      document.querySelector('[data-bairro').innerText = dadosCep.bairro;
-      document.querySelector('[data-local').innerText = dadosCep.localidade;
-      document.querySelector('[data-uf').innerText = dadosCep.uf;
-      document.querySelector('[data-ddd').innerText = dadosCep.ddd;
+      document.querySelector('[data-log]').innerText = dadosCep.logradouro;
+      document.querySelector('[data-bairro]').innerText = dadosCep.bairro;
+      document.querySelector('[data-local]').innerText = dadosCep.localidade;
+      document.querySelector('[data-uf]').innerText = dadosCep.uf;
+      document.querySelector('[data-ddd]').innerText = dadosCep.ddd;
 
     })
 }
