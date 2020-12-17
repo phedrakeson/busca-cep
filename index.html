@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Busca Cep</title>
+</head>
+<body>
+
+  <main class="container">
+    <div class="buscador">
+      <h1>Busca CEP</h1>´
+      <form action="">
+        <label for="cep">CEP</label>
+        <input type="number" name="cep" id="cep" max-length="8">
+        <button id="buscarCep">Buscar Cep</button>
+      </form>
+
+      <div id="dadosCep">
+        <h2>CEP</h2>
+        <p data-cep></p>
+
+        <h2>Logradouro</h2>
+        <p data-log></p>
+
+        <h2>Bairro</h2>
+        <p data-bairro></p>
+
+        <h2>Localidade</h2>
+        <p data-local></p>
+
+        <h2>UF</h2>
+        <p data-uf></p>
+
+        <h2>DDD</h2>
+        <p data-ddd></p>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="buscaCep.js"></script>
+</body>
+</html>
