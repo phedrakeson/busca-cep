@@ -15,12 +15,14 @@ function buscaCep(cep) {
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
     .then(r => r.json())
     .then(dadosCep => {
-      document.querySelector('[data-cep]').innerText = dadosCep.cep;
-      document.querySelector('[data-log]').innerText = dadosCep.logradouro;
-      document.querySelector('[data-bairro]').innerText = dadosCep.bairro;
-      document.querySelector('[data-local]').innerText = dadosCep.localidade;
-      document.querySelector('[data-uf]').innerText = dadosCep.uf;
-      document.querySelector('[data-ddd]').innerText = dadosCep.ddd;
-
+      if(!dadosCep.cep) {
+        return alert('CEP não encontrado, verifique novamente!');
+      }
+        document.querySelector('[data-cep]').innerText = dadosCep.cep;
+        document.querySelector('[data-log]').innerText = dadosCep.logradouro;
+        document.querySelector('[data-bairro]').innerText = dadosCep.bairro;
+        document.querySelector('[data-local]').innerText = dadosCep.localidade;
+        document.querySelector('[data-uf]').innerText = dadosCep.uf;
+        document.querySelector('[data-ddd]').innerText = dadosCep.ddd;
     })
 }
