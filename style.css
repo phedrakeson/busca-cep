@@ -8,9 +8,11 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  color: #d0fefe;
 }
 
-#dadosCep {
+body {
+  background: #017374;
 }
 
 .container {
@@ -25,7 +27,7 @@ html {
   margin-top: 60px;
   text-align: center;
   justify-content: center;
-  background-color: tomato;
+  background-color: #1f3b4d;
   padding: 30px;
   display: block;
   border-radius: 15px 15px 0 0;
@@ -35,7 +37,7 @@ html {
   font-size: 4rem;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #fff;
+  color: #d0fefe;
 }
 
 form label {
@@ -56,14 +58,19 @@ form button {
 button {
   margin: 20px auto;
   cursor: pointer;
-  padding: 10px 15px 10px 15px;
+  padding: 15px 20px 15px 20px;
   font-size: 2rem;
+  background: #017374;
+  border: none;
+  color: #d0fefe;
 }
 
 #dadosCep h2 {
   font-size: 2.4rem;
+  font-weight: 700;
 }
 
 #dadosCep p {
   font-size: 2rem;
+  color: #d8dcd6;
 }
